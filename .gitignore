@@ -1,48 +1,24 @@
-# ---------------------------------------------------------------------------
-# Secrets, Credentials, and Environment Variables
-# ---------------------------------------------------------------------------
-.env
-.env.local
-*.pem
-credentials.json
-
-# ---------------------------------------------------------------------------
-# Dependencies (Language Specific)
-# ---------------------------------------------------------------------------
-node_modules/
-/vendor/
-.venv/
-venv/
-env/
-
-# ---------------------------------------------------------------------------
-# Build Outputs and Compiled Code
-# ---------------------------------------------------------------------------
-dist/
-build/
-out/
-*.exe
-*.dll
-*.class
-*.pyc
-
-# ---------------------------------------------------------------------------
-# Log Files and Runtime Data
-# ---------------------------------------------------------------------------
+# Logs
+logs
 *.log
 npm-debug.log*
-yarn-error.log
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# ---------------------------------------------------------------------------
-# IDE and Text Editor Configurations
-# ---------------------------------------------------------------------------
-.vscode/
-.idea/
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
 *.suo
 *.ntvs*
-
-# ---------------------------------------------------------------------------
-# Operating System Junk Files
-# ---------------------------------------------------------------------------
-.DS_Store
-Thumbs.db
+*.njsproj
+*.sln
+*.sw?
